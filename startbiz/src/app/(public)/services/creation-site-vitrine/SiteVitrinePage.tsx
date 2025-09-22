@@ -552,16 +552,16 @@ export default function SiteVitrinePage() {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+                className="inline-flex items-center gap-2 bg-[#01579b]/10 text-[#01579b] px-4 py-2 rounded-full text-sm font-medium mb-6"
               >
                 <TrendingUp className="h-4 w-4" />
                 Résultats clients
               </motion.div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
                 Transformations <span className="text-[#01579b]">réelles</span>
             </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Découvrez comment nos sites vitrines ont transformé les résultats business de nos clients
             </p>
           </motion.div>
