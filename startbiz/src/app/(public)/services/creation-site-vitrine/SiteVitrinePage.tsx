@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import ButtonCTA from "@/components/ButtonCTA";
 import { useState, useEffect } from "react";
 import { ArrowRight, CheckCircle, Globe, Eye, Target, Cog, Search, Palette, Shield, Zap, Award, ChevronLeft, ChevronRight, Star, Quote, Rocket, Users, BarChart3, Clock, Check, Settings, TrendingUp, Phone, Mail, MapPin, Calendar, Wrench, Lightbulb, DollarSign, ThumbsUp, FileText, HelpCircle, MessageSquare } from "lucide-react";
 
@@ -162,15 +163,9 @@ export default function SiteVitrinePage() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center rounded-lg border font-medium border-gray-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-[#01579b] bg-[#01579b] text-white hover:bg-[#01579b]/90 hover:border-[#01579b]/90 focus:ring-[#01579b] hover:border-gray-300 px-8 py-4 text-lg gap-4"
-                >
-                    Obtenir un devis gratuit
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-          </motion.div>
-        </motion.div>
+                <ButtonCTA />
+              </motion.div>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -1022,13 +1017,7 @@ export default function SiteVitrinePage() {
                 Votre site vitrine professionnel, c'est maintenant.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                  className="inline-flex items-center justify-center rounded-lg font-medium border border-gray-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 border-white bg-white text-[#01579b] hover:bg-blue-50 focus:ring-white px-8 py-4 text-lg gap-4"
-              >
-                  Démarrer mon projet
-                <ArrowRight className="h-5 w-5" />
-              </Link>
+              <ButtonCTA />
             </div>
           </motion.div>
         </div>
