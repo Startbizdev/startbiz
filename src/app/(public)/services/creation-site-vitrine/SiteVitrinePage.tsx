@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import ButtonCTA from "@/components/ButtonCTA";
+import CTAbaspage from "@/components/CTAbaspage";
 import { useState, useEffect } from "react";
 import { ArrowRight, CheckCircle, Globe, Eye, Target, Cog, Search, Palette, Shield, Zap, Award, ChevronLeft, ChevronRight, Star, Quote, Rocket, Users, BarChart3, Clock, Check, Settings, TrendingUp, Phone, Mail, MapPin, Calendar, Wrench, Lightbulb, DollarSign, ThumbsUp, FileText, HelpCircle, MessageSquare } from "lucide-react";
 
@@ -162,15 +164,9 @@ export default function SiteVitrinePage() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center rounded-lg border font-medium border-gray-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-[#01579b] bg-[#01579b] text-white hover:bg-[#01579b]/90 hover:border-[#01579b]/90 focus:ring-[#01579b] hover:border-gray-300 px-8 py-4 text-lg gap-4"
-                >
-                    Obtenir un devis gratuit
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-          </motion.div>
-        </motion.div>
+                <ButtonCTA />
+              </motion.div>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -521,11 +517,11 @@ export default function SiteVitrinePage() {
                   <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
                     <div className="font-bold text-xl text-[#01579b] mb-1">2-3</div>
                     <div className="text-[#666666]">semaines design</div>
-                  </div>
+                </div>
                   <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
                     <div className="font-bold text-xl text-[#01579b] mb-1">3-4</div>
                     <div className="text-[#666666]">semaines développement</div>
-                  </div>
+          </div>
                   <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
                     <div className="font-bold text-xl text-[#01579b] mb-1">1</div>
                     <div className="text-[#666666]">semaine tests & lancement</div>
@@ -653,7 +649,7 @@ export default function SiteVitrinePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
                 viewport={{ once: true }}
-                >
+              >
                   {/* Header avec image et info client */}
                   <div className="relative h-56 overflow-hidden">
                     <Image
@@ -670,7 +666,7 @@ export default function SiteVitrinePage() {
                         <div className="w-2 h-2 bg-[#01579b] rounded-full"></div>
                         {caseStudy.industry}
                   </div>
-                    </div>
+                </div>
 
                     {/* Nom client */}
                     <div className="absolute bottom-6 left-6 right-6">
@@ -723,7 +719,7 @@ export default function SiteVitrinePage() {
                             <div className="w-1.5 h-1.5 bg-[#01579b] rounded-full mt-2.5 flex-shrink-0"></div>
                             <span className="text-sm sm:text-base text-gray-700 font-medium leading-relaxed">
                               {result}
-                            </span>
+                  </span>
                           </div>
                         ))}
                       </div>
@@ -940,7 +936,7 @@ export default function SiteVitrinePage() {
               >
                   <div className="w-16 h-16 bg-[#01579b]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <guarantee.icon className="h-8 w-8 text-[#01579b]" />
-                  </div>
+            </div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3">{guarantee.title}</h3>
                   <p className="text-gray-600">{guarantee.description}</p>
                 </motion.div>
@@ -1001,38 +997,20 @@ export default function SiteVitrinePage() {
                   </div>
                 </div>
               </div>
-            </motion.div>
-        </div>
-      </section>
-
-        {/* CTA Final - Style agence impactant */}
-      <section className="py-20 sm:py-24 bg-[#01579b]">
-          <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
-                Prêt à lancer votre projet ?
-            </h2>
-              <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                Rejoignez nos 600+ clients qui ont choisi l'excellence technique.
-                Votre site vitrine professionnel, c'est maintenant.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                  className="inline-flex items-center justify-center rounded-lg font-medium border border-gray-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 border-white bg-white text-[#01579b] hover:bg-blue-50 focus:ring-white px-8 py-4 text-lg gap-4"
-              >
-                  Démarrer mon projet
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </div>
           </motion.div>
         </div>
       </section>
+
+      {/* CTA du bas - Prêt à lancer votre projet ? */}
+      <CTAbaspage
+        variant="photo-gauche"
+        title="Prêt à lancer votre projet ?"
+        description="Rejoignez nos 600+ clients qui ont choisi l'excellence technique. Votre site vitrine professionnel, c'est maintenant."
+        primaryCTA={{
+          text: <>Demander un devis - <em>c'est gratuit !</em></>,
+          href: "/contact"
+        }}
+      />
     </main>
     </>
   );
