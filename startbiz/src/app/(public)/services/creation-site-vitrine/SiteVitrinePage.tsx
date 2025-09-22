@@ -413,7 +413,7 @@ export default function SiteVitrinePage() {
 
               <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
                 Process Création Site Vitrine <span className="text-[#01579b]">Professionnel</span>
-              </h2>
+            </h2>
               <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Un processus structuré en 6 étapes pour garantir l'excellence technique et la réussite de votre projet
             </p>
@@ -632,12 +632,12 @@ export default function SiteVitrinePage() {
 
                   <div className="p-8">
                     <div className="mb-6">
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Le défi</h3>
+                      <h4 className="text-lg font-bold text-gray-900 mb-2">Le défi</h4>
                       <p className="text-gray-600">{caseStudy.challenge}</p>
                 </div>
 
                     <div className="mb-6">
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Notre solution</h3>
+                      <h4 className="text-lg font-bold text-gray-900 mb-2">Notre solution</h4>
                       <p className="text-gray-600">{caseStudy.solution}</p>
                     </div>
 
@@ -932,7 +932,7 @@ export default function SiteVitrinePage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Prêt à dominer votre marché ?
+                Création Site Vitrine Professionnel - <span className="text-[#01579b]">Devis Gratuit</span>
             </h2>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                 Rejoignez nos 600+ clients qui ont choisi l'excellence technique.
