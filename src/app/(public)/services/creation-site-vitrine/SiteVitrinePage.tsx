@@ -128,14 +128,12 @@ export default function SiteVitrinePage() {
                 Site vitrine professionnel
               </motion.div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                  Création de sites vitrines professionnels
-                <br />
-                  <span className="text-[#01579b]">WordPress & Next.js</span>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                  Création de <span className="text-[#01579b]">sites vitrines</span> professionnels
               </h1>
 
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Plus de 600 projets réussis. Développez votre présence digitale avec des sites web performants,
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed">
+                  Développez votre présence digitale avec des sites web performants,
                   optimisés pour le référencement et conçus pour convertir vos visiteurs en clients.
               </p>
 
@@ -175,12 +173,10 @@ export default function SiteVitrinePage() {
               className="relative"
             >
               <div className="relative">
-                <Image
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                    alt="Site vitrine professionnel moderne - Startbiz"
-                  width={600}
-                  height={400}
-                  className="rounded-2xl border border-gray-200"
+                <img
+                  src="/images/testimonials/undraw_building-websites_k2zp.svg"
+                  alt="Site vitrine professionnel moderne - Startbiz"
+                  className="w-full h-auto max-w-2xl mx-auto"
                 />
               </div>
             </motion.div>
@@ -198,7 +194,7 @@ export default function SiteVitrinePage() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-primary leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-brand-primary leading-tight">
               Pourquoi choisir un site vitrine professionnel ?
             </h2>
             <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#444444] leading-relaxed max-w-2xl mx-auto">
@@ -225,7 +221,7 @@ export default function SiteVitrinePage() {
                       <IconComponent className="h-7 w-7 text-[#374151] group-hover:text-[#01579b] transition-colors duration-300" />
                     </div>
 
-                    <h4 className="text-lg font-semibold text-brand-primary mb-3 group-hover:text-[#01579b] transition-colors duration-300">
+                    <h4 className="text-base sm:text-lg font-semibold text-brand-primary mb-3 group-hover:text-[#01579b] transition-colors duration-300">
                       {benefit.title}
                     </h4>
 
@@ -250,7 +246,7 @@ export default function SiteVitrinePage() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-primary leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-brand-primary leading-tight">
               WordPress ou Next.js : <span className="text-[#01579b]">quelle technologie choisir ?</span>
             </h2>
             <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#444444] leading-relaxed max-w-2xl mx-auto">
@@ -306,7 +302,7 @@ export default function SiteVitrinePage() {
                 98% de clients satisfaits
               </motion.div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Ils nous font confiance
             </h2>
               <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
@@ -366,19 +362,19 @@ export default function SiteVitrinePage() {
               className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-gray-200"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#01579b] mb-2">600+</div>
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#01579b] mb-2">600+</div>
                 <div className="text-sm text-gray-600">Sites créés</div>
           </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#01579b] mb-2">98%</div>
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#01579b] mb-2">98%</div>
                 <div className="text-sm text-gray-600">Clients satisfaits</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#01579b] mb-2">4.9/5</div>
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#01579b] mb-2">4.9/5</div>
                 <div className="text-sm text-gray-600">Note moyenne</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#01579b] mb-2">24/7</div>
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#01579b] mb-2">24/7</div>
                 <div className="text-sm text-gray-600">Support</div>
               </div>
           </motion.div>
@@ -406,7 +402,7 @@ export default function SiteVitrinePage() {
                 Notre méthodologie
               </motion.div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-primary leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-brand-primary leading-tight">
                 Notre méthode de travail
             </h2>
               <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#444444] leading-relaxed max-w-2xl mx-auto">
@@ -467,7 +463,7 @@ export default function SiteVitrinePage() {
                   transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
                   viewport={{ once: true }}
                 >
-                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#01579b] text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#01579b] text-white rounded-full flex items-center justify-center font-bold text-sm sm:text-base lg:text-lg group-hover:scale-110 transition-transform duration-300">
                     {process.step}
                     </div>
 
@@ -477,7 +473,7 @@ export default function SiteVitrinePage() {
                     </div>
                     </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#01579b] transition-colors duration-300">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#01579b] transition-colors duration-300">
                     {process.title}
                     </h3>
 
@@ -511,19 +507,19 @@ export default function SiteVitrinePage() {
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                   <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
-                    <div className="font-bold text-xl text-[#01579b] mb-1">1-2</div>
+                    <div className="font-bold text-lg sm:text-xl lg:text-2xl text-[#01579b] mb-1">1-2</div>
                     <div className="text-[#666666]">semaines audit</div>
                   </div>
                   <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
-                    <div className="font-bold text-xl text-[#01579b] mb-1">2-3</div>
+                    <div className="font-bold text-lg sm:text-xl lg:text-2xl text-[#01579b] mb-1">2-3</div>
                     <div className="text-[#666666]">semaines design</div>
                 </div>
                   <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
-                    <div className="font-bold text-xl text-[#01579b] mb-1">3-4</div>
+                    <div className="font-bold text-lg sm:text-xl lg:text-2xl text-[#01579b] mb-1">3-4</div>
                     <div className="text-[#666666]">semaines développement</div>
           </div>
                   <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
-                    <div className="font-bold text-xl text-[#01579b] mb-1">1</div>
+                    <div className="font-bold text-lg sm:text-xl lg:text-2xl text-[#01579b] mb-1">1</div>
                     <div className="text-[#666666]">semaine tests & lancement</div>
                   </div>
                 </div>
@@ -553,7 +549,7 @@ export default function SiteVitrinePage() {
                 Résultats clients
               </motion.div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-primary leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-brand-primary leading-tight">
                 Résultats clients
             </h2>
             <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#444444] leading-relaxed max-w-2xl mx-auto">
@@ -792,7 +788,7 @@ export default function SiteVitrinePage() {
                 Questions fréquentes
               </motion.div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-primary leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-brand-primary leading-tight">
                 Questions fréquentes
             </h2>
             <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#444444] leading-relaxed max-w-2xl mx-auto">
@@ -885,7 +881,7 @@ export default function SiteVitrinePage() {
                 Nos garanties
               </motion.div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-primary leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-brand-primary leading-tight">
                 Nos engagements
             </h2>
               <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#444444] leading-relaxed max-w-2xl mx-auto">
@@ -987,7 +983,7 @@ export default function SiteVitrinePage() {
                 </div>
                 <div className="text-center">
                   <div className="bg-[#01579b] text-white rounded-xl p-6 mb-6">
-                    <div className="text-3xl font-bold mb-2">10 ans</div>
+                    <div className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2">10 ans</div>
                     <div className="text-sm text-blue-100">d'expérience</div>
                   </div>
                   <div className="text-sm text-gray-600">
@@ -1007,7 +1003,7 @@ export default function SiteVitrinePage() {
         title="Prêt à lancer votre projet ?"
         description="Rejoignez nos 600+ clients qui ont choisi l'excellence technique. Votre site vitrine professionnel, c'est maintenant."
         primaryCTA={{
-          text: <>Demander un devis - <em>c'est gratuit !</em></>,
+          text: "Demander un devis - c'est gratuit !",
           href: "/contact"
         }}
       />

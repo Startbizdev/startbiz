@@ -25,7 +25,8 @@ export default function ButtonCTA({
         href={href}
         variant="primary"
         size="lg"
-        className=""
+        fullWidth={true}
+        className="force-syne w-full md:w-auto text-sm sm:text-base md:text-lg px-3 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4"
       >
         {text}
       </Button>

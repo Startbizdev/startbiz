@@ -85,7 +85,7 @@ export async function POST(req: Request) {
   const adminEmail = process.env.BACKOFFICE_PROTECTED_EMAIL || "";
 
   const prospectHtml = `
-    <div style="font-family:Inter,Arial,sans-serif;padding:24px">
+    <div style="font-family:'Work Sans',Arial,sans-serif;padding:24px">
       <h2>Merci — parlons de votre projet</h2>
       <p>Nous avons bien reçu votre demande. Nous revenons vers vous rapidement.</p>
       <p><a href="${siteUrl}/rdv" target="_blank">Réserver un appel</a></p>
@@ -93,7 +93,7 @@ export async function POST(req: Request) {
   `;
 
   const internalHtml = `
-    <div style="font-family:Inter,Arial,sans-serif;padding:24px">
+    <div style="font-family:'Work Sans',Arial,sans-serif;padding:24px">
       <h3>${lead.leadType === "appointment" ? "🗓️ Nouveau rendez-vous" : "Nouveau lead"} Startbiz</h3>
       <p><strong>${lead.firstName} ${lead.lastName}</strong> — ${lead.email}</p>
       ${lead.leadType === "appointment" && lead.appointmentDateTime ? 

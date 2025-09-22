@@ -1,8 +1,8 @@
 # Système Typographique Startbiz
 
 ## Police
-- **Police principale** : Inter (Google Font)
-- **Variable CSS** : `var(--font-inter)`
+- **Police principale** : Work Sans (Google Font)
+- **Variable CSS** : `var(--font-work-sans)`
 - **Fallback** : `ui-sans-serif, system-ui, sans-serif`
 
 ## Classes responsives

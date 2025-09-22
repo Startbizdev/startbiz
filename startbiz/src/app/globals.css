@@ -7,7 +7,7 @@
   --color-brand-orange: #01579b; /* Maintenant bleu foncé */
 }
 
-/* Configuration de la police Inter pour Tailwind */
+/* Configuration des polices Google Fonts pour Tailwind */
 @layer base {
   * {
     box-sizing: border-box;
@@ -18,7 +18,7 @@
     padding: 0;
     background-color: #ffffff;
     color: #444444;
-    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-work-sans), ui-sans-serif, system-ui, sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -26,7 +26,7 @@
 
   /* Hiérarchie typographique cohérente */
   h1, h2, h3, h4, h5, h6, .text-h1, .text-h2, .text-h3 {
-    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-syne), ui-sans-serif, system-ui, sans-serif;
   }
 
   h1, .text-h1 {
@@ -49,23 +49,23 @@
   }
   
   p, .text-body {
-    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-work-sans), ui-sans-serif, system-ui, sans-serif;
     font-weight: 400; /* regular */
     line-height: 1.75; /* leading-7 */
     color: #444444;
   }
 
   .text-small {
-    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-work-sans), ui-sans-serif, system-ui, sans-serif;
     font-weight: 400; /* regular */
     font-size: 0.875rem; /* text-sm */
     line-height: 1.25; /* leading-5 */
     color: #444444;
   }
-  
+
   /* Boutons et CTA */
   button, .btn {
-    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-work-sans), ui-sans-serif, system-ui, sans-serif;
     font-weight: 500; /* medium */
     font-size: 1rem; /* text-base */
     letter-spacing: normal;
@@ -76,6 +76,7 @@
 @layer utilities {
   /* H1 - Headlines principaux */
   .text-h1-responsive {
+    font-family: var(--font-syne), ui-sans-serif, system-ui, sans-serif;
     font-size: 1.875rem; /* 30px - Mobile */
     line-height: 1.2;
     font-weight: 600;
@@ -96,6 +97,7 @@
   
   /* H2 - Sous-titres de section */
   .text-h2-responsive {
+    font-family: var(--font-syne), ui-sans-serif, system-ui, sans-serif;
     font-size: 1.25rem; /* 20px - Mobile */
     line-height: 1.3;
     font-weight: 600;
@@ -115,6 +117,7 @@
   
   /* H3 - Titres de composants */
   .text-h3-responsive {
+    font-family: var(--font-syne), ui-sans-serif, system-ui, sans-serif;
     font-size: 1.125rem; /* 18px - Mobile/Tablet */
     line-height: 1.4;
     font-weight: 500;
@@ -128,6 +131,7 @@
   
   /* Body text responsive */
   .text-body-responsive {
+    font-family: var(--font-work-sans), ui-sans-serif, system-ui, sans-serif;
     font-size: 0.9375rem; /* 15px - Mobile */
     line-height: 1.5; /* leading-6 */
     font-weight: 400;

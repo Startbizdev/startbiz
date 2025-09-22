@@ -41,14 +41,20 @@ export default function CTAbaspage({
       case "photo-gauche":
         return (
           <section className={`overflow-hidden ${backgroundColor} sm:grid sm:grid-cols-2 ${className}`}>
-            <div className="relative">
-              <Image
-                alt="Équipe de développeurs travaillant sur des projets digitaux innovants"
-                src={image}
-                className="h-56 w-full object-cover sm:h-full"
-                width={800}
-                height={600}
-              />
+            <div className="relative bg-gradient-to-br from-[#01579b]/10 via-blue-50/50 to-green-50/30">
+              <div className="relative h-56 sm:h-full flex items-center justify-center p-8">
+                <div className="relative">
+                  <img
+                    src="/images/testimonials/undraw_web-design-showcase_6t2l.svg"
+                    alt="Équipe de développeurs travaillant sur des projets digitaux innovants"
+                    className="w-full h-auto max-w-sm mx-auto"
+                    style={{ opacity: 0.85 }}
+                  />
+                  <div className="absolute -top-6 -right-6 w-24 h-24 bg-[#01579b]/15 rounded-full blur-2xl"></div>
+                  <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-green-50 rounded-full blur-2xl"></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-blue-50/60 rounded-full blur-xl"></div>
+                </div>
+              </div>
             </div>
             <div className="p-8 md:p-12 lg:px-16 lg:py-24">
               <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">

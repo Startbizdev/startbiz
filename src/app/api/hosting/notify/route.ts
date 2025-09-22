@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
     if (!type) continue;
 
     const html = `
-      <div style="font-family:Inter,Arial,sans-serif;padding:24px">
+      <div style="font-family:'Work Sans',Arial,sans-serif;padding:24px">
         <h3>Rappel hébergement ${type}</h3>
         <p>Client: ${a.clientName}</p>
         <p>Domaine: ${a.domain}</p>
