@@ -124,11 +124,11 @@ export default function SiteVitrinePage() {
                   role="status"
               >
                 <Globe className="h-4 w-4" />
-                Site Vitrine Professionnel
+                Site vitrine professionnel
               </motion.div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                  Création Site Vitrine <span className="text-[#01579b]">Professionnel</span>
+                  Création de site vitrine <span className="text-[#01579b]">professionnel</span>
                 <br />
                   WordPress & Next.js
               </h1>
@@ -204,7 +204,7 @@ export default function SiteVitrinePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-              Avantages Site Vitrine <span className="text-[#01579b]">Professionnel</span>
+              Avantages d'un site vitrine <span className="text-[#01579b]">professionnel</span>
             </h2>
             <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 L'excellence technique au service de vos objectifs business
@@ -256,7 +256,7 @@ export default function SiteVitrinePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-              Technologies Site Vitrine : <span className="text-[#01579b]">WordPress vs Next.js</span>
+              Technologies pour site vitrine : <span className="text-[#01579b]">WordPress vs Next.js</span>
             </h2>
             <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 WordPress ou Next.js : nous adaptons la technologie à vos besoins
@@ -312,7 +312,7 @@ export default function SiteVitrinePage() {
               </motion.div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Avis Clients Site Vitrine <span className="text-[#01579b]">Professionnel</span>
+                Avis clients site vitrine <span className="text-[#01579b]">professionnel</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Découvrez comment nos sites vitrines transforment leurs résultats
@@ -412,8 +412,8 @@ export default function SiteVitrinePage() {
               </motion.div>
 
               <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Process Création Site Vitrine <span className="text-[#01579b]">Professionnel</span>
-            </h2>
+                Process de création site vitrine <span className="text-[#01579b]">professionnel</span>
+              </h2>
               <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Un processus structuré en 6 étapes pour garantir l'excellence technique et la réussite de votre projet
             </p>
@@ -559,7 +559,7 @@ export default function SiteVitrinePage() {
               </motion.div>
 
             <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Études de Cas Site Vitrine <span className="text-[#01579b]">Professionnel</span>
+                Études de cas site vitrine <span className="text-[#01579b]">professionnel</span>
             </h2>
             <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Découvrez comment nos sites vitrines ont transformé les résultats business de nos clients
@@ -642,7 +642,7 @@ export default function SiteVitrinePage() {
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-bold text-[#01579b] mb-4">Résultats obtenus</h3>
+                      <h4 className="text-lg font-bold text-[#01579b] mb-4">Résultats obtenus</h4>
                       <div className="grid grid-cols-1 gap-3">
                         {caseStudy.results.map((result, idx) => (
                           <div key={idx} className="flex items-center gap-3">
@@ -713,7 +713,7 @@ export default function SiteVitrinePage() {
               </motion.div>
 
             <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                FAQ Création Site Vitrine <span className="text-[#01579b]">Professionnel</span>
+                FAQ création site vitrine <span className="text-[#01579b]">professionnel</span>
             </h2>
             <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Réponses aux questions les plus fréquemment posées sur nos sites vitrines
@@ -771,10 +771,10 @@ export default function SiteVitrinePage() {
                 transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
                 viewport={{ once: true }}
               >
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-start gap-3">
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-start gap-3">
                     <MessageSquare className="h-5 w-5 text-[#01579b] mt-1 flex-shrink-0" />
                     {faq.question}
-                  </h3>
+                  </h4>
                   <p className="text-gray-600 leading-relaxed ml-8">
                     {faq.answer}
                   </p>
@@ -806,7 +806,7 @@ export default function SiteVitrinePage() {
               </motion.div>
 
               <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Garanties Site Vitrine <span className="text-[#01579b]">Professionnel</span>
+                Garanties site vitrine <span className="text-[#01579b]">professionnel</span>
               </h2>
               <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Des garanties solides et une expertise reconnue pour votre tranquillité d'esprit
@@ -857,7 +857,7 @@ export default function SiteVitrinePage() {
                   <div className="w-16 h-16 bg-[#01579b]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <guarantee.icon className="h-8 w-8 text-[#01579b]" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{guarantee.title}</h3>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3">{guarantee.title}</h4>
                   <p className="text-gray-600">{guarantee.description}</p>
                 </motion.div>
               ))}
@@ -873,8 +873,8 @@ export default function SiteVitrinePage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Avantages concurrentiels Startbiz
-                  </h3>
+                    Avantages Concurrentiels Création Site Vitrine
+                </h3>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -932,7 +932,7 @@ export default function SiteVitrinePage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Création Site Vitrine Professionnel - <span className="text-[#01579b]">Devis Gratuit</span>
+                Création site vitrine professionnel - <span className="text-[#01579b]">devis gratuit</span>
             </h2>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                 Rejoignez nos 600+ clients qui ont choisi l'excellence technique.
