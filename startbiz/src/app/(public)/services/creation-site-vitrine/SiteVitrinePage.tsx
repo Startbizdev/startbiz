@@ -312,7 +312,7 @@ export default function SiteVitrinePage() {
               </motion.div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Ils nous font <span className="text-[#01579b]">confiance</span>
+                Avis Clients Site Vitrine <span className="text-[#01579b]">Professionnel</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Découvrez comment nos sites vitrines transforment leurs résultats
@@ -412,8 +412,8 @@ export default function SiteVitrinePage() {
               </motion.div>
 
               <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Comment nous créons votre <span className="text-[#01579b]">site vitrine</span>
-            </h2>
+                Process Création Site Vitrine <span className="text-[#01579b]">Professionnel</span>
+              </h2>
               <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Un processus structuré en 6 étapes pour garantir l'excellence technique et la réussite de votre projet
             </p>
@@ -559,7 +559,7 @@ export default function SiteVitrinePage() {
               </motion.div>
 
             <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Transformations <span className="text-[#01579b]">réelles</span>
+                Études de Cas Site Vitrine <span className="text-[#01579b]">Professionnel</span>
             </h2>
             <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Découvrez comment nos sites vitrines ont transformé les résultats business de nos clients
@@ -713,7 +713,7 @@ export default function SiteVitrinePage() {
               </motion.div>
 
             <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Tout ce que vous devez <span className="text-[#01579b]">savoir</span>
+                FAQ Création Site Vitrine <span className="text-[#01579b]">Professionnel</span>
             </h2>
             <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Réponses aux questions les plus fréquemment posées sur nos sites vitrines
@@ -806,7 +806,7 @@ export default function SiteVitrinePage() {
               </motion.div>
 
               <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Pourquoi nous <span className="text-[#01579b]">faire confiance</span>
+                Garanties Site Vitrine <span className="text-[#01579b]">Professionnel</span>
               </h2>
               <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Des garanties solides et une expertise reconnue pour votre tranquillité d'esprit
