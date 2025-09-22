@@ -692,8 +692,8 @@ export default function SiteVitrinePage() {
       </section>
 
         {/* FAQ complète - Section SEO essentielle */}
-        <section className="py-20 sm:py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20 sm:py-24 bg-green-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div
               className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
