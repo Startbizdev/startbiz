@@ -128,9 +128,9 @@ export default function SiteVitrinePage() {
               </motion.div>
 
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                  Site internet qui <span className="text-[#01579b]">génère des clients</span>
+                  Création Site Vitrine <span className="text-[#01579b]">Professionnel</span>
                 <br />
-                  24h/24
+                  WordPress & Next.js
               </h1>
 
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -204,7 +204,7 @@ export default function SiteVitrinePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Pourquoi choisir Startbiz ?
+              Avantages Site Vitrine <span className="text-[#01579b]">Professionnel</span>
             </h2>
             <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 L'excellence technique au service de vos objectifs business
@@ -256,7 +256,7 @@ export default function SiteVitrinePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-              Technologies modernes
+              Technologies Site Vitrine : <span className="text-[#01579b]">WordPress vs Next.js</span>
             </h2>
             <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 WordPress ou Next.js : nous adaptons la technologie à vos besoins
@@ -312,7 +312,7 @@ export default function SiteVitrinePage() {
               </motion.div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Ils nous font <span className="text-[#01579b]">confiance</span>
+                Avis Clients Site Vitrine <span className="text-[#01579b]">Professionnel</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Découvrez comment nos sites vitrines transforment leurs résultats
@@ -412,8 +412,8 @@ export default function SiteVitrinePage() {
               </motion.div>
 
               <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Comment nous créons votre <span className="text-[#01579b]">site vitrine</span>
-            </h2>
+                Process Création Site Vitrine <span className="text-[#01579b]">Professionnel</span>
+              </h2>
               <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Un processus structuré en 6 étapes pour garantir l'excellence technique et la réussite de votre projet
             </p>
