@@ -7,6 +7,7 @@ import ButtonCTA from "@/components/ButtonCTA";
 import CTAbaspage from "@/components/CTAbaspage";
 import { useState, useEffect } from "react";
 import { ArrowRight, CheckCircle, Globe, Eye, Target, Cog, Search, Palette, Shield, Zap, Award, ChevronLeft, ChevronRight, Star, Quote, Rocket, Users, BarChart3, Clock, Check, Settings, TrendingUp, Phone, Mail, MapPin, Calendar, Wrench, Lightbulb, DollarSign, ThumbsUp, FileText, HelpCircle, MessageSquare } from "lucide-react";
+import { faqJsonLd } from "./faq-schema";
 
 const benefits = [
   {
@@ -68,19 +69,7 @@ const testimonials = [
   }
 ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Création Site Vitrine Professionnel",
-  "description": "Création de site vitrine professionnel sur mesure avec WordPress ou Next.js. Design responsive, SEO intégré, performance optimale.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Startbiz",
-    "url": "https://startbiz.fr"
-  },
-  "areaServed": "FR",
-  "serviceType": "Web Development"
-};
+// Le schéma FAQ est importé depuis faq-schema.ts
 
 export default function SiteVitrinePage() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -104,7 +93,7 @@ export default function SiteVitrinePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLd),
+          __html: JSON.stringify(faqJsonLd),
         }}
       />
     <main className="min-h-screen">
@@ -475,7 +464,7 @@ export default function SiteVitrinePage() {
 
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#01579b] transition-colors duration-300">
                     {process.title}
-                    </h3>
+                  </h3>
 
                   <p className="text-gray-600 mb-4 leading-relaxed">
                     {process.description}
@@ -767,99 +756,6 @@ export default function SiteVitrinePage() {
         </div>
       </section>
 
-        {/* FAQ complète - Section SEO essentielle */}
-        <section className="py-20 sm:py-24 bg-green-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-              <motion.div
-                initial={{ scale: 0.9 }}
-                whileInView={{ scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="inline-flex items-center gap-2 bg-[#01579b]/10 text-[#01579b] px-4 py-2 rounded-full text-sm font-medium mb-6"
-              >
-                <HelpCircle className="h-4 w-4" />
-                Questions fréquentes
-              </motion.div>
-
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-brand-primary leading-tight">
-                Questions fréquentes
-            </h2>
-            <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#444444] leading-relaxed max-w-2xl mx-auto">
-                Trouvez les réponses aux questions que vous vous posez sur notre processus et nos services
-            </p>
-          </motion.div>
-
-            <div className="space-y-6">
-              {[
-                {
-                  question: "Combien coûte la création d'un site vitrine professionnel ?",
-                  answer: "Le coût dépend de vos besoins spécifiques : de 4 500€ à 15 000€ pour un site Next.js premium, ou de 2 500€ à 8 000€ pour WordPress selon la complexité. Nous proposons toujours un devis personnalisé gratuit après analyse de votre projet."
-                },
-                {
-                  question: "WordPress ou Next.js : lequel choisir pour mon activité ?",
-                  answer: "Choisissez WordPress si vous souhaitez gérer votre contenu seul et avez un budget plus accessible. Optez pour Next.js si les performances SEO absolues et la scalabilité sont vos priorités. Nous vous conseillons selon vos objectifs business."
-                },
-                {
-                  question: "Quel est le délai de réalisation d'un site vitrine ?",
-                  answer: "Notre processus structuré prend entre 4 et 6 semaines : 1-2 semaines d'audit, 2-3 semaines de design, 3-4 semaines de développement, et 1 semaine de tests et lancement. Nous respectons toujours nos délais."
-                },
-                {
-                  question: "Mon site sera-t-il optimisé pour les moteurs de recherche ?",
-                  answer: "Absolument. Nous intégrons le SEO dès la conception : structure sémantique optimisée, contenu stratégique, données structurées Schema.org, optimisation Core Web Vitals, et stratégie de mots-clés longue traîne."
-                },
-                {
-                  question: "Proposez-vous la maintenance après la création ?",
-                  answer: "Oui, nous proposons des formules de maintenance complète incluant : mises à jour de sécurité, sauvegardes automatiques, monitoring des performances, corrections techniques, et support technique réactif."
-                },
-                {
-                  question: "Le site sera-t-il compatible mobile et tablette ?",
-                  answer: "Tous nos sites sont développés en approche mobile-first, garantissant une expérience utilisateur optimale sur tous les appareils. Nous testons sur plus de 20 configurations différentes."
-                },
-                {
-                  question: "Pouvez-vous intégrer mes outils existants ?",
-                  answer: "Oui, nous maîtrisons l'intégration avec tous les outils business : CRM (HubSpot, Pipedrive), analytics (Google Analytics 4), marketing automation, solutions e-commerce, ERP, et bien d'autres selon vos besoins."
-                },
-                {
-                  question: "Comment mesurez-vous les résultats de mon site ?",
-                  answer: "Nous mettons en place un suivi complet avec rapports mensuels détaillés : trafic organique, taux de conversion, leads générés, performance SEO, Core Web Vitals, et ROI de votre investissement digital."
-                },
-                {
-                  question: "Que se passe-t-il si je ne suis pas satisfait du résultat ?",
-                  answer: "Nous garantissons votre satisfaction avec une période de révisions gratuites de 30 jours après livraison. Si le résultat ne correspond pas à vos attentes, nous effectuons toutes les modifications nécessaires gratuitement."
-                },
-                {
-                  question: "Proposez-vous des formations pour gérer mon site ?",
-                  answer: "Oui, toutes nos prestations incluent une formation personnalisée pour vous et votre équipe. Nous vous formons à la gestion du contenu, aux mises à jour, et à l'utilisation des fonctionnalités avancées."
-                }
-              ].map((faq, index) => (
-              <motion.div
-                  key={index}
-                  className="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-[#01579b]/20 transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
-                viewport={{ once: true }}
-              >
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                    <MessageSquare className="h-5 w-5 text-[#01579b] mt-1 flex-shrink-0" />
-                    {faq.question}
-                </h3>
-                  <p className="text-gray-600 leading-relaxed ml-8">
-                    {faq.answer}
-                  </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
         {/* Garanties et avantages concurrentiels */}
         <section className="py-20 sm:py-24 bg-blue-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -949,7 +845,7 @@ export default function SiteVitrinePage() {
                   <div>
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
                     Avantages Concurrentiels Création Site Vitrine
-                </h3>
+                  </h3>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -994,6 +890,223 @@ export default function SiteVitrinePage() {
                 </div>
               </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16">
+        <div className="w-full px-8 sm:px-12 lg:px-16">
+
+          <div className="space-y-8">
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Combien coûte la création d'un site vitrine ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Le coût de création d'un site vitrine dépend de plusieurs facteurs : la complexité fonctionnelle, le nombre de pages,
+                les intégrations nécessaires (formulaires, blog, e-commerce léger), et les besoins en contenu personnalisé.
+                Un site vitrine standard avec 5-8 pages, design sur mesure, formulaire de contact et optimisation SEO de base
+                commence généralement à 2 500€ HT. Pour un site plus élaboré avec animations, blog intégré, système de réservation
+                ou fonctionnalités e-commerce, le tarif peut monter jusqu'à 8 000€ HT ou plus. Chaque projet fait l'objet d'un
+                devis personnalisé après un audit gratuit de vos besoins. Nous proposons également des formules d'abonnement
+                mensuel pour la maintenance et l'évolution du site. Le ROI d'un bon site vitrine est généralement atteint
+                en 6-12 mois grâce à l'acquisition de nouveaux clients.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Quel est le délai de réalisation d'un site vitrine ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Le délai de réalisation varie selon la complexité du projet. Pour un site vitrine standard (5-8 pages avec design
+                personnalisé, optimisation SEO et formulaire de contact), comptez 4 à 6 semaines. Ce délai comprend : l'analyse
+                de vos besoins et de votre concurrence (1 semaine), la conception UX/UI avec validation des maquettes (2 semaines),
+                le développement technique et intégration des contenus (2 semaines), les tests et optimisations (1 semaine).
+                Pour les projets plus complexes incluant des fonctionnalités avancées (système de réservation, intégration API,
+                blog multi-auteurs), le délai peut s'étendre à 8-12 semaines. Nous travaillons en méthodologie agile avec des
+                points hebdomadaires pour vous tenir informé de l'avancement. Pendant le développement, nous vous fournissons
+                un accès à un environnement de pré-production pour valider les évolutions en temps réel.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Mon site sera-t-il adapté aux mobiles et tablettes ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Absolument essentiel ! Aujourd'hui, plus de 65% des visites sur les sites web se font depuis un smartphone.
+                Tous nos sites vitrines sont conçus selon l'approche "mobile-first" : nous commençons par optimiser l'expérience
+                utilisateur sur mobile, puis nous adaptons le design aux tablettes et ordinateurs. Cela signifie que votre site
+                s'affichera parfaitement sur tous les écrans, avec des temps de chargement optimisés pour le mobile (moins de
+                3 secondes). Nous utilisons les dernières technologies CSS (Flexbox, Grid) et nous testons systématiquement
+                sur plus de 20 appareils différents. Votre site sera également optimisé pour les gestes tactiles (swipe,
+                pinch-to-zoom) et les fonctionnalités natives des mobiles (appels téléphoniques directs, géolocalisation).
+                Cette approche garantit une excellente expérience utilisateur quel que soit le support utilisé.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Pouvez-vous créer les contenus (textes et photos) de mon site ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Oui, nous proposons un service complet de création de contenu intégré à nos forfaits. Notre équipe comprend
+                des rédacteurs web spécialisés en SEO, des photographes professionnels et des graphistes pour la retouche d'images.
+                Pour les textes, nous réalisons une analyse sémantique de votre secteur d'activité et de vos concurrents pour
+                identifier les mots-clés stratégiques. Chaque page est optimisée pour le référencement naturel tout en restant
+                engageante pour vos visiteurs. Pour les photos, nous pouvons organiser des shootings professionnels dans vos
+                locaux ou utiliser des banques d'images premium. Si vous préférez fournir vos propres contenus, nous nous
+                chargeons de l'optimisation technique (redimensionnement, compression, balisage ALT) et de l'intégration
+                harmonieuse dans le design. Dans tous les cas, nous formons votre équipe à la gestion future des contenus.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Faut-il que je m'occupe moi-même de l'hébergement et du nom de domaine ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Pas du tout ! Nous pouvons tout gérer pour vous, de A à Z. Pour l'hébergement, nous recommandons des solutions
+                professionnelles et sécurisées (OVH, AWS, ou des spécialistes comme PlanetHoster) adaptées à la taille de votre
+                site et à votre trafic attendu. Nous configurons l'hébergement avec des certificats SSL gratuits, des backups
+                automatiques, et une protection contre les attaques DDoS. Pour le nom de domaine, nous vous accompagnons dans
+                le choix du nom (.fr, .com, .eu) et gérons l'enregistrement auprès des registrares officiels. Nous pouvons même
+                récupérer votre nom de domaine actuel si nécessaire. Tous nos forfaits incluent 1 an d'hébergement offert et
+                nous proposons des contrats de maintenance annuel (à partir de 99€/mois) incluant les mises à jour de sécurité,
+                les backups, le monitoring des performances et le support technique. Vous n'avez plus qu'à vous concentrer
+                sur votre cœur de métier !
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Comment mon site sera-t-il visible sur Google et les moteurs de recherche ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Le référencement naturel (SEO) est intégré dès la conception de votre site vitrine. Nous commençons par une
+                analyse approfondie de votre secteur d'activité, de vos concurrents directs et des mots-clés stratégiques.
+                Chaque page est structurée selon les bonnes pratiques SEO : balises title et meta description optimisées,
+                headings hiérarchisés (H1, H2, H3), URLs parlantes, optimisation des images avec balises ALT, et contenu
+                de qualité répondant aux intentions de recherche. Nous intégrons également la recherche vocale et le SEO
+                local si pertinent. La vitesse de chargement est optimisée (score PageSpeed supérieur à 90/100) car c'est
+                un critère majeur pour Google. Après la mise en ligne, nous proposons un accompagnement SEO continu avec
+                rapports mensuels, recommandations d'optimisation, et stratégies de contenu. Pour les secteurs très compétitifs,
+                nous pouvons coupler le SEO avec des campagnes Google Ads payantes pour une visibilité immédiate.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Pourrai-je modifier moi-même le contenu de mon site après sa création ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Oui, c'est même essentiel pour garder votre site à jour et optimiser votre référencement ! Nous utilisons
+                des systèmes de gestion de contenu (CMS) intuitifs adaptés à vos besoins. Pour les sites simples, nous
+                privilégions WordPress avec l'éditeur Gutenberg (interface drag-and-drop) ou des solutions no-code comme
+                Webflow pour une prise en main immédiate. Pour les sites plus complexes nécessitant une gestion fine des
+                droits utilisateurs et des workflows d'approbation, nous utilisons Strapi ou des CMS headless. Dans tous
+                les cas, nous formons votre équipe (ou au minimum 2 personnes) lors d'une session de 2h en visio-conférence
+                avec support écran partagé. Vous recevez également un guide utilisateur personnalisé et un numéro de
+                support technique. Pour les clients ne souhaitant pas gérer eux-mêmes leurs contenus, nous proposons
+                des forfaits de gestion de contenu mensuels incluant la mise à jour des textes, l'ajout de nouvelles pages,
+                et l'optimisation SEO continue.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Quelles garanties offrez-vous sur la qualité et la sécurité de mon site ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                La qualité et la sécurité sont au cœur de notre approche. Tous nos sites bénéficient d'une garantie de 3 mois
+                sur les bugs techniques post-lancement. Pendant cette période, nous corrigeons gratuitement tout dysfonctionnement
+                détecté. Nous respectons les normes RGAA (accessibilité) et GDPR (protection des données personnelles) dès
+                la conception. Pour la sécurité, nous intégrons systématiquement des protections contre les attaques XSS,
+                CSRF, et SQL injection, des certificats SSL gratuits, et des systèmes de backup automatiques. Chaque site
+                fait l'objet de tests de pénétration avant la mise en production. Nous proposons également un service de
+                monitoring 24/7 avec alertes automatiques en cas de problème de performance ou de sécurité. Tous nos
+                développeurs sont formés aux bonnes pratiques de sécurité et nous effectuons des mises à jour régulières
+                des composants utilisés. Enfin, nous pouvons assurer la maintenance évolutive de votre site avec des
+                contrats annuels incluant les mises à jour de sécurité, les optimisations de performance, et l'évolution
+                fonctionnelle selon vos nouveaux besoins.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Travaillez-vous uniquement avec des grandes entreprises ou aussi avec des PME/TPE ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Au contraire ! Plus de 80% de nos clients sont des PME, TPE, indépendants et startups. Notre approche est
+                précisément adaptée aux contraintes budgétaires et temporelles des petites structures. Nous avons développé
+                des process optimisés et des tarifs compétitifs pour les projets de petite et moyenne envergure. Par exemple,
+                notre formule "Site Vitrine Essentiel" à 2 500€ HT est parfaite pour les jeunes entreprises qui ont besoin
+                d'une présence web professionnelle sans se ruiner. Nous comprenons que pour une PME, le site web doit
+                rapidement générer des leads ou ventes pour être rentable. C'est pourquoi nous intégrons toujours une
+                stratégie de conversion (call-to-actions optimisés, formulaires qualifiés, tracking des objectifs).
+                Nous travaillons aussi bien avec des artisans, commerçants, professions libérales, associations que
+                des entreprises industrielles. Notre objectif est de démocratiser l'accès au web de qualité pour toutes
+                les entreprises, quelle que soit leur taille. D'ailleurs, notre plus gros succès commercial vient d'une
+                TPE qui a multiplié par 4 ses devis grâce à son nouveau site vitrine !
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Que se passe-t-il concrètement après la mise en ligne de mon site ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                La mise en ligne n'est que le début de notre collaboration ! Nous accompagnons systématiquement nos clients
+                pendant les premiers mois pour optimiser les performances et maximiser le ROI. Dans les 48h suivant la
+                mise en ligne, nous réalisons un audit complet des performances (vitesse de chargement, compatibilité navigateurs,
+                responsive design) et nous corrigeons tout problème détecté. Ensuite, nous mettons en place un tableau de
+                bord Google Analytics et Search Console pour suivre le trafic, les conversions et le référencement. Vous
+                recevez un rapport mensuel détaillé avec les métriques clés, l'évolution du positionnement SEO, et des
+                recommandations d'optimisation. Nous organisons également un rendez-vous mensuel pour faire le point et
+                prioriser les améliorations. Pour les clients sous contrat de maintenance, nous prenons en charge les
+                mises à jour de sécurité, les optimisations de performance, et les évolutions mineures. Enfin, nous formons
+                votre équipe à l'utilisation du site et nous restons disponibles par email ou téléphone pour tout support.
+                Notre objectif : que votre site devienne un véritable levier de croissance pour votre entreprise !
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Puis-je ajouter des fonctionnalités avancées plus tard (blog, e-commerce, prise de rendez-vous) ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Absolument ! C'est même recommandé d'évoluer progressivement. Dès la conception initiale, nous architecturons
+                votre site pour qu'il soit évolutif et modulaire. Par exemple, si vous commencez avec un site vitrine simple,
+                nous pouvons facilement ajouter ultérieurement : un blog avec système de newsletter intégré, une boutique
+                e-commerce légère (jusqu'à 50 produits), un système de prise de rendez-vous en ligne synchronisé avec votre
+                agenda Outlook/Google Calendar, un espace client personnalisé, ou des intégrations avec vos outils métier
+                (CRM, comptabilité, gestion de stock). Nous travaillons avec des technologies modulaires qui permettent
+                d'ajouter des fonctionnalités sans refaire tout le site. Chaque évolution fait l'objet d'un devis séparé
+                et peut être réalisée en quelques jours seulement. Cette approche progressive permet de commencer modestement
+                et d'investir dans les fonctionnalités au fur et à mesure de votre croissance. D'ailleurs, 60% de nos clients
+                ajoutent des fonctionnalités dans les 12 mois suivant la mise en ligne initiale.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-sm sm:text-base font-medium text-[#01579b] mb-4">
+                Comment mesurez-vous le succès de mon site web ?
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
+                Nous définissons ensemble des KPIs (Key Performance Indicators) clairs dès le départ, alignés sur vos objectifs
+                business. Pour un site vitrine B2B, nous suivons le nombre de leads qualifiés générés, le taux de conversion
+                des formulaires, et la qualité des contacts. Pour le B2C, nous monitorons les ventes en ligne, les paniers
+                abandonnés, et l'engagement utilisateur. Au niveau technique, nous surveillons la vitesse de chargement,
+                le taux de rebond, et le positionnement SEO. Nous utilisons des outils professionnels : Google Analytics
+                et Search Console pour le trafic, Hotjar pour l'expérience utilisateur, et des dashboards personnalisés
+                pour la visualisation des données. Chaque mois, vous recevez un rapport automatisé avec les tendances,
+                les points d'amélioration, et nos recommandations. Nous organisons des revues trimestrielles pour ajuster
+                la stratégie. Notre approche data-driven garantit que votre investissement web génère un ROI mesurable
+                et que nous optimisons continuellement les performances de votre site.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
