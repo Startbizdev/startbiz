@@ -105,200 +105,200 @@ export default function SiteVitrinePage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <main className="min-h-screen">
+    <main className="min-h-screen">
         {/* Hero Section - Impactant et orienté conversion */}
         <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20 sm:py-24">
-          <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="inline-flex items-center gap-2 bg-[#01579b]/10 text-[#01579b] px-4 py-2 rounded-full text-sm font-medium mb-6"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="inline-flex items-center gap-2 bg-[#01579b]/10 text-[#01579b] px-4 py-2 rounded-full text-sm font-medium mb-6"
                   role="status"
-                >
-                  <Globe className="h-4 w-4" />
-                  Site Vitrine Professionnel
-                </motion.div>
+              >
+                <Globe className="h-4 w-4" />
+                Site Vitrine Professionnel
+              </motion.div>
 
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
                   Site internet qui <span className="text-[#01579b]">génère des clients</span>
-                  <br />
+                <br />
                   24h/24
-                </h1>
+              </h1>
 
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                   Plus de 600 sites vitrines créés. Design premium, SEO intégré,
                   performance optimale. Vos concurrents n'existent plus.
-                </p>
+              </p>
 
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-500" />
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
                     <span className="text-sm">Design qui convertit</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-500" />
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
                     <span className="text-sm">SEO professionnel</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-500" />
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
                     <span className="text-sm">Performance maximale</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-500" />
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
                     <span className="text-sm">Support technique</span>
                   </div>
-                </div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  className="flex flex-col sm:flex-row gap-4"
-                >
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center rounded-lg border font-medium shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-[#01579b] bg-[#01579b] text-white hover:bg-[#01579b]/90 hover:border-[#01579b]/90 focus:ring-[#01579b] hover:shadow-lg hover:-translate-y-0.5 px-8 py-4 text-lg gap-4"
-                  >
-                    Obtenir un devis gratuit
-                    <ArrowRight className="h-5 w-5" />
-                  </Link>
-                </motion.div>
-              </motion.div>
+              </div>
 
               <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="relative"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="flex flex-col sm:flex-row gap-4"
               >
-                <div className="relative">
-                  <Image
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                    alt="Site vitrine professionnel moderne - Startbiz"
-                    width={600}
-                    height={400}
-                    className="rounded-2xl shadow-2xl"
-                  />
-                </div>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-lg border font-medium shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-[#01579b] bg-[#01579b] text-white hover:bg-[#01579b]/90 hover:border-[#01579b]/90 focus:ring-[#01579b] hover:shadow-lg hover:-translate-y-0.5 px-8 py-4 text-lg gap-4"
+                >
+                    Obtenir un devis gratuit
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
               </motion.div>
-            </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="relative">
+                <Image
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="Site vitrine professionnel moderne - Startbiz"
+                  width={600}
+                  height={400}
+                  className="rounded-2xl shadow-2xl"
+                />
+              </div>
+            </motion.div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Avantages stratégiques - Style agence moderne */}
-        <section className="py-20 sm:py-24 bg-green-50">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <motion.div
-              className="text-center mb-12"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
+      <section className="py-20 sm:py-24 bg-green-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
                 Pourquoi choisir Startbiz ?
-              </h2>
-              <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
+            </h2>
+            <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 L'excellence technique au service de vos objectifs business
-              </p>
-            </motion.div>
+            </p>
+          </motion.div>
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {benefits.map((benefit, index) => {
-                const IconComponent = benefit.icon;
-                return (
-                  <motion.div
-                    key={index}
-                    className="group relative overflow-hidden rounded-xl bg-white border border-gray-100 p-6 transition-all duration-300 hover:border-[#01579b]/20 hover:-translate-y-1"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#01579b]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                    <div className="relative">
-                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <IconComponent className="h-7 w-7 text-[#374151] group-hover:text-[#01579b] transition-colors duration-300" />
-                      </div>
-
-                      <h3 className="text-xl font-semibold text-brand-primary mb-3 group-hover:text-[#01579b] transition-colors duration-300">
-                        {benefit.title}
-                      </h3>
-
-                      <p className="text-sm text-[#444444] leading-relaxed">
-                        {benefit.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        {/* Technologies utilisées - Sans prix */}
-        <section className="py-20 sm:py-24 bg-blue-50">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <motion.div
-              className="text-center mb-12"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
-                Technologies modernes
-              </h2>
-              <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
-                WordPress ou Next.js : nous adaptons la technologie à vos besoins
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {technologies.map((tech, index) => (
+              const IconComponent = benefit.icon;
+              return (
                 <motion.div
-                  key={tech.name}
-                  className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition-all duration-300"
+                    key={index}
+                  className="group relative overflow-hidden rounded-xl bg-white border border-gray-100 p-6 transition-all duration-300 hover:border-[#01579b]/20 hover:-translate-y-1"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-xl font-bold text-brand-primary mb-3">{tech.name}</h3>
-                  <p className="text-[#444444] mb-4 leading-relaxed">{tech.description}</p>
-                  <div className="space-y-2">
-                    {tech.benefits.slice(0, 2).map((benefit, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-sm text-[#666]">
-                        <div className="h-1.5 w-1.5 rounded-full bg-[#01579b]"></div>
-                        {benefit}
-                      </div>
-                    ))}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#01579b]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                  <div className="relative">
+                      <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <IconComponent className="h-7 w-7 text-[#374151] group-hover:text-[#01579b] transition-colors duration-300" />
+                    </div>
+
+                    <h3 className="text-xl font-semibold text-brand-primary mb-3 group-hover:text-[#01579b] transition-colors duration-300">
+                      {benefit.title}
+                    </h3>
+
+                      <p className="text-sm text-[#444444] leading-relaxed">
+                      {benefit.description}
+                    </p>
                   </div>
                 </motion.div>
-              ))}
-            </div>
+              );
+            })}
           </div>
-        </section>
+        </div>
+      </section>
+
+        {/* Technologies utilisées - Sans prix */}
+      <section className="py-20 sm:py-24 bg-blue-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
+              Technologies modernes
+            </h2>
+            <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
+                WordPress ou Next.js : nous adaptons la technologie à vos besoins
+            </p>
+          </motion.div>
+
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {technologies.map((tech, index) => (
+              <motion.div
+                key={tech.name}
+                className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition-all duration-300"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-xl font-bold text-brand-primary mb-3">{tech.name}</h3>
+                <p className="text-[#444444] mb-4 leading-relaxed">{tech.description}</p>
+                <div className="space-y-2">
+                  {tech.benefits.slice(0, 2).map((benefit, idx) => (
+                    <div key={idx} className="flex items-center gap-2 text-sm text-[#666]">
+                      <div className="h-1.5 w-1.5 rounded-full bg-[#01579b]"></div>
+                      {benefit}
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
         {/* Témoignages clients - Carrousel simple */}
         <section className="py-20 sm:py-24 bg-gradient-to-br from-yellow-50 via-orange-50 to-yellow-100 relative overflow-hidden">
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
+          <motion.div
               className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              viewport={{ once: true }}
+            viewport={{ once: true }}
             >
               <motion.div
                 initial={{ scale: 0.9 }}
@@ -358,9 +358,9 @@ export default function SiteVitrinePage() {
                       {testimonial.result}
                     </div>
                   </div>
-                </motion.div>
-              ))}
-            </motion.div>
+              </motion.div>
+            ))}
+          </motion.div>
 
             {/* Stats section simplifiée */}
             <motion.div
@@ -387,16 +387,16 @@ export default function SiteVitrinePage() {
                 <div className="text-sm text-gray-600">Support</div>
               </div>
             </motion.div>
-          </div>
-        </section>
+        </div>
+      </section>
 
         {/* Process de création détaillé - Section SEO importante */}
-        <section className="py-20 sm:py-24 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
+        <section className="py-20 sm:py-24 bg-blue-50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <motion.div
               className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
               viewport={{ once: true }}
             >
@@ -404,8 +404,8 @@ export default function SiteVitrinePage() {
                 initial={{ scale: 0.9 }}
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+            viewport={{ once: true }}
+                className="inline-flex items-center gap-2 bg-[#01579b]/10 text-[#01579b] px-4 py-2 rounded-full text-sm font-medium mb-6"
               >
                 <Settings className="h-4 w-4" />
                 Notre méthodologie
@@ -413,11 +413,11 @@ export default function SiteVitrinePage() {
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 Comment nous créons votre <span className="text-[#01579b]">site vitrine</span>
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Un processus structuré en 6 étapes pour garantir l'excellence technique et la réussite de votre projet
-              </p>
-            </motion.div>
+            </p>
+          </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
@@ -480,11 +480,11 @@ export default function SiteVitrinePage() {
                     <div className="w-14 h-14 bg-[#01579b]/10 rounded-xl flex items-center justify-center group-hover:bg-[#01579b]/20 transition-colors duration-300">
                       <process.icon className="h-7 w-7 text-[#01579b]" />
                     </div>
-                  </div>
+                    </div>
 
                   <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#01579b] transition-colors duration-300">
                     {process.title}
-                  </h3>
+                    </h3>
 
                   <p className="text-gray-600 mb-4 leading-relaxed">
                     {process.description}
@@ -500,13 +500,13 @@ export default function SiteVitrinePage() {
                   </div>
                 </motion.div>
               ))}
-            </div>
+        </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
+            viewport={{ once: true }}
               className="mt-16 text-center"
             >
               <div className="bg-gradient-to-r from-[#01579b] to-blue-600 rounded-2xl p-8 text-white">
@@ -532,21 +532,21 @@ export default function SiteVitrinePage() {
                     <div className="text-blue-200">semaine tests & lancement</div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+                </div>
+              </motion.div>
+        </div>
+      </section>
 
         {/* Études de cas détaillées - Section SEO puissante */}
-        <section className="py-20 sm:py-24 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
+      <section className="py-20 sm:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
               <motion.div
                 initial={{ scale: 0.9 }}
                 whileInView={{ scale: 1 }}
@@ -560,11 +560,11 @@ export default function SiteVitrinePage() {
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 Transformations <span className="text-[#01579b]">réelles</span>
-              </h2>
+            </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Découvrez comment nos sites vitrines ont transformé les résultats business de nos clients
-              </p>
-            </motion.div>
+            </p>
+          </motion.div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
               {[
@@ -608,14 +608,14 @@ export default function SiteVitrinePage() {
                   image: "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                 }
               ].map((caseStudy, index) => (
-                <motion.div
+              <motion.div
                   key={caseStudy.client}
                   className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-                  viewport={{ once: true }}
-                >
+                viewport={{ once: true }}
+              >
                   <div className="relative h-48 overflow-hidden">
                     <Image
                       src={caseStudy.image}
@@ -634,7 +634,7 @@ export default function SiteVitrinePage() {
                     <div className="mb-6">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Le défi</h3>
                       <p className="text-gray-600">{caseStudy.challenge}</p>
-                    </div>
+                </div>
 
                     <div className="mb-6">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Notre solution</h3>
@@ -652,10 +652,10 @@ export default function SiteVitrinePage() {
                         ))}
                       </div>
                     </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -688,19 +688,19 @@ export default function SiteVitrinePage() {
                 </div>
               </div>
             </motion.div>
-          </div>
-        </section>
+        </div>
+      </section>
 
         {/* FAQ complète - Section SEO essentielle */}
         <section className="py-20 sm:py-24 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
+          <motion.div
               className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
               <motion.div
                 initial={{ scale: 0.9 }}
                 whileInView={{ scale: 1 }}
@@ -714,11 +714,11 @@ export default function SiteVitrinePage() {
 
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 Tout ce que vous devez <span className="text-[#01579b]">savoir</span>
-              </h2>
+            </h2>
               <p className="text-lg text-gray-600">
                 Réponses aux questions les plus fréquemment posées sur nos sites vitrines
-              </p>
-            </motion.div>
+            </p>
+          </motion.div>
 
             <div className="space-y-6">
               {[
@@ -763,14 +763,14 @@ export default function SiteVitrinePage() {
                   answer: "Oui, toutes nos prestations incluent une formation personnalisée pour vous et votre équipe. Nous vous formons à la gestion du contenu, aux mises à jour, et à l'utilisation des fonctionnalités avancées."
                 }
               ].map((faq, index) => (
-                <motion.div
+              <motion.div
                   key={index}
                   className="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-[#01579b]/20 transition-all duration-300"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
-                  viewport={{ once: true }}
-                >
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
+                viewport={{ once: true }}
+              >
                   <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-start gap-3">
                     <MessageSquare className="h-5 w-5 text-[#01579b] mt-1 flex-shrink-0" />
                     {faq.question}
@@ -778,22 +778,22 @@ export default function SiteVitrinePage() {
                   <p className="text-gray-600 leading-relaxed ml-8">
                     {faq.answer}
                   </p>
-                </motion.div>
-              ))}
-            </div>
+              </motion.div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Garanties et avantages concurrentiels */}
         <section className="py-20 sm:py-24 bg-gradient-to-br from-green-50 to-blue-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
+          <motion.div
               className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-              viewport={{ once: true }}
-            >
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
               <motion.div
                 initial={{ scale: 0.9 }}
                 whileInView={{ scale: 1 }}
@@ -933,24 +933,24 @@ export default function SiteVitrinePage() {
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Prêt à dominer votre marché ?
-              </h2>
+            </h2>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                 Rejoignez nos 600+ clients qui ont choisi l'excellence technique.
                 Votre site vitrine professionnel, c'est maintenant.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/contact"
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact"
                   className="inline-flex items-center justify-center rounded-lg font-medium shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 border-white bg-white text-[#01579b] hover:bg-blue-50 focus:ring-white px-8 py-4 text-lg gap-4"
-                >
+              >
                   Démarrer mon projet
-                  <ArrowRight className="h-5 w-5" />
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-      </main>
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </main>
     </>
   );
 }
