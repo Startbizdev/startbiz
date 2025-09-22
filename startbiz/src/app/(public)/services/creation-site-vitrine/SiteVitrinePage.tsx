@@ -107,7 +107,7 @@ export default function SiteVitrinePage() {
       />
     <main className="min-h-screen">
         {/* Hero Section - Impactant et orienté conversion */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20 sm:py-24">
+        <section className="relative overflow-hidden bg-white py-20 sm:py-24">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -165,7 +165,7 @@ export default function SiteVitrinePage() {
               >
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center rounded-lg border font-medium shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-[#01579b] bg-[#01579b] text-white hover:bg-[#01579b]/90 hover:border-[#01579b]/90 focus:ring-[#01579b] hover:shadow-lg hover:-translate-y-0.5 px-8 py-4 text-lg gap-4"
+                  className="inline-flex items-center justify-center rounded-lg border font-medium border-gray-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-[#01579b] bg-[#01579b] text-white hover:bg-[#01579b]/90 hover:border-[#01579b]/90 focus:ring-[#01579b] hover:border-gray-300 px-8 py-4 text-lg gap-4"
                 >
                     Obtenir un devis gratuit
                   <ArrowRight className="h-5 w-5" />
@@ -185,7 +185,7 @@ export default function SiteVitrinePage() {
                     alt="Site vitrine professionnel moderne - Startbiz"
                   width={600}
                   height={400}
-                  className="rounded-2xl shadow-2xl"
+                  className="rounded-2xl border border-gray-200"
                 />
               </div>
             </motion.div>
@@ -267,7 +267,7 @@ export default function SiteVitrinePage() {
             {technologies.map((tech, index) => (
               <motion.div
                 key={tech.name}
-                className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition-all duration-300"
+                className="bg-white rounded-xl p-6 border border-gray-100 hover:border-gray-300 transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
@@ -290,7 +290,7 @@ export default function SiteVitrinePage() {
       </section>
 
         {/* Témoignages clients - Carrousel simple */}
-        <section className="py-20 sm:py-24 bg-gradient-to-br from-yellow-50 via-orange-50 to-yellow-100 relative overflow-hidden">
+        <section className="py-20 sm:py-24 bg-green-50 relative overflow-hidden">
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -332,7 +332,7 @@ export default function SiteVitrinePage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                  className="bg-white rounded-xl border border-gray-100 p-6 hover:border-gray-300 transition-all duration-300 relative overflow-hidden"
                 >
                   <div className="absolute top-4 right-4 text-yellow-200 opacity-30">
                     <Quote className="h-8 w-8" />
@@ -354,7 +354,7 @@ export default function SiteVitrinePage() {
                       <div className="text-sm text-gray-600">{testimonial.company}</div>
                     </div>
 
-                    <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-2 py-1 rounded-full text-xs font-semibold shadow-md whitespace-nowrap">
+                    <div className="bg-[#01579b] text-white px-2 py-1 rounded-full text-xs font-semibold border border-[#01579b]/50 whitespace-nowrap">
                       {testimonial.result}
                     </div>
                   </div>
@@ -466,7 +466,7 @@ export default function SiteVitrinePage() {
               ].map((process, index) => (
                 <motion.div
                   key={process.step}
-                  className="relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 group"
+                  className="relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-gray-300 transition-all duration-300 group"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
@@ -509,27 +509,27 @@ export default function SiteVitrinePage() {
             viewport={{ once: true }}
               className="mt-16 text-center"
             >
-              <div className="bg-gradient-to-r from-[#01579b] to-blue-600 rounded-2xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">Délai de réalisation : 4 à 6 semaines</h3>
-                <p className="text-blue-100 mb-6">
+              <div className="bg-white rounded-2xl p-8 border border-gray-200">
+                <h3 className="text-2xl font-bold mb-4 text-brand-primary">Délai de réalisation : 4 à 6 semaines</h3>
+                <p className="text-[#444444] mb-6">
                   De l'audit stratégique au lancement optimisé, nous respectons nos délais pour vous permettre de lancer rapidement votre présence digitale.
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                  <div>
-                    <div className="font-bold text-xl">1-2</div>
-                    <div className="text-blue-200">semaines audit</div>
+                  <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <div className="font-bold text-xl text-[#01579b] mb-1">1-2</div>
+                    <div className="text-[#666666]">semaines audit</div>
                   </div>
-                  <div>
-                    <div className="font-bold text-xl">2-3</div>
-                    <div className="text-blue-200">semaines design</div>
+                  <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <div className="font-bold text-xl text-[#01579b] mb-1">2-3</div>
+                    <div className="text-[#666666]">semaines design</div>
                   </div>
-                  <div>
-                    <div className="font-bold text-xl">3-4</div>
-                    <div className="text-blue-200">semaines développement</div>
+                  <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <div className="font-bold text-xl text-[#01579b] mb-1">3-4</div>
+                    <div className="text-[#666666]">semaines développement</div>
                   </div>
-                  <div>
-                    <div className="font-bold text-xl">1</div>
-                    <div className="text-blue-200">semaine tests & lancement</div>
+                  <div className="text-center p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <div className="font-bold text-xl text-[#01579b] mb-1">1</div>
+                    <div className="text-[#666666]">semaine tests & lancement</div>
                   </div>
                 </div>
                 </div>
@@ -610,7 +610,7 @@ export default function SiteVitrinePage() {
               ].map((caseStudy, index) => (
               <motion.div
                   key={caseStudy.client}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
+                  className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-gray-300 transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
@@ -662,29 +662,29 @@ export default function SiteVitrinePage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-[#01579b] to-blue-600 rounded-2xl p-8 text-white text-center"
+              className="bg-white rounded-2xl p-8 border border-gray-200 text-center"
             >
-              <h3 className="text-2xl font-bold mb-4">Votre succès, notre priorité</h3>
-              <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold mb-4 text-brand-primary">Votre succès, notre priorité</h3>
+              <p className="text-[#444444] mb-8 max-w-2xl mx-auto">
                 Chaque projet est une opportunité de créer de la valeur pour votre entreprise.
                 Nos résultats parlent pour nous : plus de 600 sites déployés, des milliers de clients satisfaits.
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div>
-                  <div className="text-3xl font-bold mb-1">600+</div>
-                  <div className="text-sm text-blue-200">Sites créés</div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                  <div className="text-2xl font-bold text-[#01579b] mb-1">600+</div>
+                  <div className="text-sm text-[#666666]">Sites créés</div>
                 </div>
-                <div>
-                  <div className="text-3xl font-bold mb-1">98%</div>
-                  <div className="text-sm text-blue-200">Clients satisfaits</div>
+                <div className="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                  <div className="text-2xl font-bold text-[#01579b] mb-1">98%</div>
+                  <div className="text-sm text-[#666666]">Clients satisfaits</div>
                 </div>
-                <div>
-                  <div className="text-3xl font-bold mb-1">4.9/5</div>
-                  <div className="text-sm text-blue-200">Note moyenne</div>
+                <div className="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                  <div className="text-2xl font-bold text-[#01579b] mb-1">4.9/5</div>
+                  <div className="text-sm text-[#666666]">Note moyenne</div>
                 </div>
-                <div>
-                  <div className="text-3xl font-bold mb-1">300%</div>
-                  <div className="text-sm text-blue-200">Augmentation moyenne leads</div>
+                <div className="p-4 rounded-xl bg-gray-50 border border-gray-100">
+                  <div className="text-2xl font-bold text-[#01579b] mb-1">300%</div>
+                  <div className="text-sm text-[#666666]">Augmentation moyenne leads</div>
                 </div>
               </div>
             </motion.div>
@@ -706,16 +706,16 @@ export default function SiteVitrinePage() {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center gap-2 bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+                className="inline-flex items-center gap-2 bg-[#01579b]/10 text-[#01579b] px-4 py-2 rounded-full text-sm font-medium mb-6"
               >
                 <HelpCircle className="h-4 w-4" />
                 Questions fréquentes
               </motion.div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
                 Tout ce que vous devez <span className="text-[#01579b]">savoir</span>
             </h2>
-              <p className="text-lg text-gray-600">
+            <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Réponses aux questions les plus fréquemment posées sur nos sites vitrines
             </p>
           </motion.div>
@@ -785,8 +785,8 @@ export default function SiteVitrinePage() {
       </section>
 
         {/* Garanties et avantages concurrentiels */}
-        <section className="py-20 sm:py-24 bg-gradient-to-br from-green-50 to-blue-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20 sm:py-24 bg-blue-50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div
               className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
@@ -799,16 +799,16 @@ export default function SiteVitrinePage() {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center gap-2 bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+                className="inline-flex items-center gap-2 bg-[#01579b]/10 text-[#01579b] px-4 py-2 rounded-full text-sm font-medium mb-6"
               >
                 <Shield className="h-4 w-4" />
                 Nos garanties
               </motion.div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold tracking-tight text-brand-primary md:text-5xl">
                 Pourquoi nous <span className="text-[#01579b]">faire confiance</span>
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="mt-4 text-base text-[#444444] sm:text-lg max-w-2xl mx-auto">
                 Des garanties solides et une expertise reconnue pour votre tranquillité d'esprit
               </p>
             </motion.div>
@@ -848,7 +848,7 @@ export default function SiteVitrinePage() {
               ].map((guarantee, index) => (
                 <motion.div
                   key={guarantee.title}
-                  className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center"
+                  className="bg-white rounded-xl p-6 border border-gray-100 hover:border-gray-300 transition-all duration-300 text-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
@@ -868,7 +868,7 @@ export default function SiteVitrinePage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl"
+              className="bg-white rounded-2xl p-8 md:p-12 border border-gray-200"
             >
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
@@ -907,7 +907,7 @@ export default function SiteVitrinePage() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="bg-gradient-to-r from-[#01579b] to-blue-600 text-white rounded-xl p-6 mb-6">
+                  <div className="bg-[#01579b] text-white rounded-xl p-6 mb-6">
                     <div className="text-3xl font-bold mb-2">10 ans</div>
                     <div className="text-sm text-blue-100">d'expérience</div>
                   </div>
@@ -941,7 +941,7 @@ export default function SiteVitrinePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                  className="inline-flex items-center justify-center rounded-lg font-medium shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 border-white bg-white text-[#01579b] hover:bg-blue-50 focus:ring-white px-8 py-4 text-lg gap-4"
+                  className="inline-flex items-center justify-center rounded-lg font-medium border border-gray-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 border-white bg-white text-[#01579b] hover:bg-blue-50 focus:ring-white px-8 py-4 text-lg gap-4"
               >
                   Démarrer mon projet
                 <ArrowRight className="h-5 w-5" />
