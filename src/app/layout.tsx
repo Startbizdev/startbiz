@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Source_Sans_3 } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,9 +8,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const sourceSans = Source_Sans_3({
-  variable: "--font-source-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -26,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-      <body className={`${inter.variable} ${sourceSans.variable} antialiased`}>
+    <html lang="fr" className={`${inter.variable} ${poppins.variable}`} suppressHydrationWarning>
+      <body className="font-sans bg-white text-gray-900 antialiased">
         {children}
       </body>
     </html>

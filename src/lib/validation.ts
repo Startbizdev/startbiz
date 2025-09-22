@@ -11,7 +11,7 @@ export const leadSchema = z.object({
   company: z.string().optional(),
   role: z.enum(["Dirigeant", "CTO", "Responsable", "Autre"]).optional(),
   budgetRange: z
-    .enum(["5-10k", "10-25k", "25-50k", "50-100k", "100k+"]) 
+    .enum(["5-10k", "10-25k", "25-50k", "50-100k", "100k+"])
     .optional(),
   timeline: z.enum(["urgent", "1-3m", ">3m", "tbd"]).optional(),
   projectSummary: z.string().min(10).max(2000),
@@ -22,6 +22,11 @@ export const leadSchema = z.object({
   utm_medium: z.string().optional(),
   utm_campaign: z.string().optional(),
   token: z.string().optional(),
+  // Champs de rendez-vous
+  appointmentDate: z.string().optional(),
+  appointmentTime: z.string().optional(),
+  appointmentDateTime: z.string().optional(),
+  leadType: z.enum(["lead", "appointment"]).optional(),
 });
 
 export type LeadInput = z.infer<typeof leadSchema>;

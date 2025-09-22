@@ -71,6 +71,11 @@ export async function POST(req: Request) {
       medium: input.utm_medium,
       campaign: input.utm_campaign,
     },
+    // Champs de rendez-vous
+    appointmentDate: input.appointmentDate,
+    appointmentTime: input.appointmentTime,
+    appointmentDateTime: input.appointmentDateTime,
+    leadType: input.leadType || "lead",
     consentAt: new Date(),
     consentIpHash: (req.headers.get("x-forwarded-for") || "").split(",")[0],
   });
@@ -89,8 +94,14 @@ export async function POST(req: Request) {
 
   const internalHtml = `
     <div style="font-family:Inter,Arial,sans-serif;padding:24px">
-      <h3>Nouveau lead Startbiz</h3>
+      <h3>${lead.leadType === "appointment" ? "🗓️ Nouveau rendez-vous" : "Nouveau lead"} Startbiz</h3>
       <p><strong>${lead.firstName} ${lead.lastName}</strong> — ${lead.email}</p>
+      ${lead.leadType === "appointment" && lead.appointmentDateTime ? 
+        `<div style="background:#fef3c7;border:1px solid #f59e0b;padding:12px;border-radius:8px;margin:12px 0">
+          <p style="margin:0;font-weight:bold;color:#92400e">📅 Rendez-vous programmé :</p>
+          <p style="margin:4px 0 0 0;color:#92400e">${lead.appointmentDateTime}</p>
+        </div>` : ""
+      }
       <p>Service: ${lead.serviceSlug || "n/a"} · Ville: ${lead.citySlug || "n/a"}</p>
       <p>Budget: ${lead.budgetRange || "n/a"} · Timeline: ${lead.timeline || "n/a"}</p>
       <p>Score: ${lead.score} · Statut: ${lead.status}</p>

@@ -35,6 +35,11 @@ export interface ILead {
   owner?: string;
   consentAt?: Date;
   consentIpHash?: string;
+  // Champs de rendez-vous
+  appointmentDate?: Date;
+  appointmentTime?: string;
+  appointmentDateTime?: string;
+  leadType?: "lead" | "appointment";
 }
 
 const LeadNoteSchema = new Schema<ILeadNote>({
@@ -84,6 +89,11 @@ const LeadSchema = new Schema<ILead>(
     owner: String,
     consentAt: Date,
     consentIpHash: String,
+    // Champs de rendez-vous
+    appointmentDate: Date,
+    appointmentTime: String,
+    appointmentDateTime: String,
+    leadType: { type: String, enum: ["lead", "appointment"], default: "lead" },
   },
   { timestamps: { createdAt: true, updatedAt: true } }
 );

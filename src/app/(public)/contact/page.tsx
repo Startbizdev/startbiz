@@ -1,33 +1,31 @@
-"use client";
-import { useState } from "react";
-import { TurnstileWidget } from "@/components/Turnstile";
+import { Metadata } from "next";
+import ContactHero from "@/components/contact/ContactHero";
+import ContactMethods from "@/components/contact/ContactMethods";
+import ContactForm from "@/components/contact/ContactForm";
+import ContactFAQ from "@/components/contact/ContactFAQ";
+
+export const metadata: Metadata = {
+  title: "Contact - Startbiz | Parlons de votre projet digital",
+  description: "Contactez Startbiz pour discuter de votre projet digital. Développement web, applications mobiles, solutions sur mesure. Réponse sous 24h.",
+  keywords: "contact startbiz, agence digitale contact, devis développement, projet digital",
+  robots: "index, follow",
+  openGraph: {
+    title: "Contact - Startbiz",
+    description: "Contactez Startbiz pour discuter de votre projet digital. Réponse sous 24h.",
+    url: "https://www.startbiz.fr/contact",
+    type: "website",
+  },
+};
+
+export const revalidate = 86400;
 
 export default function ContactPage() {
-  const [token, setToken] = useState<string | undefined>(undefined);
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-    const payload = Object.fromEntries(formData.entries());
-    const res = await fetch("/api/leads", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ ...payload, token }),
-    });
-    if (res.ok) alert("Merci, nous revenons vers vous.");
-  }
   return (
-    <main className="container py-16 space-y-6">
-      <h1 className="text-4xl font-semibold">Contact</h1>
-      <form onSubmit={onSubmit} className="grid grid-cols-1 gap-4 max-w-xl">
-        <input name="firstName" placeholder="Prénom" className="border rounded-xl p-3" required />
-        <input name="lastName" placeholder="Nom" className="border rounded-xl p-3" required />
-        <input name="email" type="email" placeholder="Email" className="border rounded-xl p-3" required />
-        <textarea name="projectSummary" placeholder="Votre projet" className="border rounded-xl p-3" required />
-        <TurnstileWidget onVerify={setToken} />
-        <button className="rounded-xl bg-[var(--accent)] text-white px-4 py-3 w-fit">Envoyer</button>
-      </form>
+    <main>
+      <ContactHero />
+      <ContactMethods />
+      <ContactForm />
+      <ContactFAQ />
     </main>
   );
 }
-

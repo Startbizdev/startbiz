@@ -327,9 +327,6 @@ PUBLIC PAGES
 ADMIN PAGES (protégées)
 - /admin (dashboard : leads récents, hébergements à échéance, stats basiques)
 - /admin/leads (kanban + table + fiche)
-- /admin/content/services
-- /admin/content/cities
-- /admin/content/pages
 - /admin/newsletters
 - /admin/hosting
 - /admin/settings
